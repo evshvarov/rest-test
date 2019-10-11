@@ -22,10 +22,10 @@ RUN iris start $ISC_PACKAGE_INSTANCENAME quietly && \
             "zn \"%SYS\"\n" \
             " write \"Create web application ...\",!" \
             " set webProperties(\"NameSpace\") = \"USER\"" \
-            " set webName = \"/person\"" \
+            " set webName = \"/community\"" \
             " set webProperties(\"Enabled\") = 1" \
             " set webProperties(\"AutheEnabled\") = 32" \
-            " set webProperties(\"DispatchClass\") = \"Sample.PersonREST\"" \
+            " set webProperties(\"DispatchClass\") = \"Community.TestREST\"" \
             " set status = ##class(Security.Applications).Create(webName, .webProperties)" \
             " write:'status \$system.Status.DisplayError(status)" \
             " write \"Web application \"\"\"_webName_\"\"\" was created!\",!" \
